@@ -17,6 +17,10 @@ public class UserService {
 
     private static List<User> users;
 
+    static{
+        users= populateDummyUsers();
+    }
+
     public List<User> findAllUsers() {
         return users;
     }
